@@ -1,5 +1,5 @@
-import Character from './Character';
-import Zombie from '../Zombie/Zombie';
+import Character from '../../src/js/Character/Character';
+import Zombie from '../../src/js/Character/instances/Zombie';
 
 describe('Создание персонажа', () => {
   it('Создается персонаж с классом Character и заданным именем', () => {

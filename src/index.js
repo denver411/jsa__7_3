@@ -1,4 +1,4 @@
-import Bowman from './js/Bowman/Bowman';
+import Bowman from './js/Character/instances/Bowman';
 
 const bowman = new Bowman('1');
 const bowman1 = new Bowman('2');

@@ -23,14 +23,14 @@ class Character {
   }
 
   set powerMode(activate) {
-    if (this._powerMode.available) {
-      this._powerMode.left = 3;
-      this._powerMode.available = false;
-
-      return 'Режим powerMode включен!';
+    if (!this._powerMode.available) {
+      return new Error('Режим powerMode уже был использован');
     }
 
-    return new Error('Режим powerMode уже был использован');
+    this._powerMode.left = 3;
+    this._powerMode.available = false;
+
+    return 'Режим powerMode включен!';
   }
 
   attackEvent() {
